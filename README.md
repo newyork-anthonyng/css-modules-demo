@@ -38,7 +38,7 @@ That is the problem that CSS has.
 
 ![Example showing two template files that both use the same class name](./assets/05.png)
 
-...😑
+The duplicated `container` and `button` class names would break your styling.
 
 ![Fail](https://media.giphy.com/media/KTZ8KtDGHhlLy/giphy.gif))
 
@@ -79,3 +79,5 @@ But with CSS Modules, we can easily tell what CSS is being used. The community h
 The webpack setup is not that complicated. Luckily, the css-loader that we are using supports CSS Modules.
 
 ![Webpack configuration for CSS modules](./assets/08.png)
+
+To have truly reusable components, we need a way to encapsulate HTML, JavaScript, and CSS. CSS Modules helps with the CSS.
